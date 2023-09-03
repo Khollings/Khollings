@@ -1,15 +1,35 @@
-const sidbelbase = {
-  education: "UnderGraduate",
-  otherAlias: "Full Stack Developer",
-  codesIn: ["Javascript", "HTML", "CSS", "Python", "Bash"],
-  currentlylearning: ["MongoDB", "AI & ML","Django", "Scuva Diving"],
-  toolsUsing: ["Vue", "Flask", "Django", "FastAPI", "Sass", "AWS", "Wordpress", "Bootstrap", "Firebase", "Figma"],
-  experiences: [
-    {
+<?php
 
-💻 Tech Stack:
-CSS3 JavaScript Python HTML5 Java Google Cloud OpenStack Oracle Firebase Cloudflare Azure SASS NodeJS jQuery Bootstrap .Net Angular.js Angular React React Native Apache Figma Canva
-<!---
-Khollings/Khollings is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+namespace collins Oluwaseyitan;
+
+class About extends Me
+{
+    public function getCurrentWorkplace()
+    {
+        return [
+            'workplace' => [
+                'company' => 'Center4tech',
+                'position' => 'Full Stack Developer'         
+            ]
+        ];
+    }
+
+    public function getDailyKnowledge()
+    {
+        return [
+            Php::class,
+            Javascript::class,
+            Laravel::class,
+            Vuejs::class,
+            Angular::class,
+            ReactNative::class,
+            TailwindCss::class,
+            Aws::class,
+        ];
+    }
+
+    public function getFutureGoal()
+    {
+        return 'To contribute to open source.';
+    }
+}
